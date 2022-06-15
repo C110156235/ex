@@ -1,0 +1,11 @@
+x = int(input("小明身上有幾元:"))
+y = int(input("販賣機有幾種飲料:"))
+p = []
+z = 0
+for i in range(y):
+    p.append(input(""))
+p = list(map(int, p))
+for i in range(len(p)):
+    if x >= p[i]:
+        z += 1
+print(str(z))
